@@ -1,0 +1,122 @@
+/* Botones globales compartidos por múltiples módulos */
+
+.global-btn {
+  border: none;
+  border-radius: 7px;
+
+  padding: 10px 0;
+  background-image: linear-gradient(to bottom, #314755, #26A0DA);
+}
+
+.global-btn a {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px 32px;
+}
+
+.global-btn:hover {
+  background-image: linear-gradient(to bottom, #26A0DA, #314755);
+  cursor: pointer;
+}
+
+.global-btn:active {
+  background-image: linear-gradient(to bottom, #26A0DA, #314755);
+}
+
+.simple-btn {
+  width: 100%;
+  border: 1px solid #066A89;
+  border-radius: 5px;
+}
+
+.simple-btn a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  border-radius: 5px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  padding: 10px;
+
+  color: #066A89;
+}
+
+.simple-btn a:hover {
+  background-color: #066A89;
+  color: white;
+}
+
+.simple-btn a:active {
+  background-color: #066A89;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #FCEDED;
+  color: #FF0000;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.cancel-btn:hover {
+  background-color: #FF0000;
+  color: white;
+  cursor: pointer;
+}
+
+.cancel-btn:active {
+  background-color: #FF0000;
+  color: white;
+}
+
+.cancel-btn a {
+  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #FF0000;
+  background-color: #FCEDED;
+  padding: 10px;
+}
+
+.cancel-btn a:hover {
+  color: white;
+  background-color: #FF0000;
+}
+
+.cancel-btn a:active {
+  color: white;
+  background-color: #FF0000;
+}
+
+.pag-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1D884D;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin: 0 3px;
+}
+
+.pag-btn:hover {
+  background-color: #1D884D;
+  color: white;
+}
+
+.actual-btn {
+  background-color: #1D884D;
+  color: white;
+}

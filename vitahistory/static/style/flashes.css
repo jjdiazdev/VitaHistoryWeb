@@ -1,0 +1,55 @@
+/*inicio sección de flashes*/
+
+.flashes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EBEBEB;
+  width: 100%;
+  padding: 24px;
+  gap: 16px;
+}
+
+.flashes p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-success {
+  background-color: #8AE882;
+  color: #09562D;
+}
+
+.alert-info {
+  background-color: #9AE0FB;
+  color: #0449A1;
+}
+
+.alert-warning {
+  background-color: #FFEE99;
+  color: #936600;
+}
+
+.alert-message {
+  background-color: #F1887E;
+  color: #690731;
+}
+
+@media (min-width: 720px) {
+  .flashes p {
+    width: 550px;
+  }
+}
+
+/*final sección de flashes*/

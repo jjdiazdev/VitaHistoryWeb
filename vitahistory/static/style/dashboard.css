@@ -1,0 +1,75 @@
+/*inicio sección menú principal*/
+
+/* Background images — moved from base.html inline styles */
+.image-container-one {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url("../image/fondo-personas-registradas.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.image-container-two {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url("../image/fondo-citas-pendientes.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.image-container-three {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url("../image/fondo-pagos-por-cuotas.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.principal-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 24px;
+  gap: 16px;
+  background-color: #EBEBEB;
+  height: 100vh;
+}
+
+.menu-image {
+  width: 356px;
+  height: 223px;
+  border-radius: 20px;
+}
+
+.menu-image a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.menu-image a:active {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 720px) {
+  .principal-menu-container {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .menu-image:hover {
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+/*final sección menú principal*/

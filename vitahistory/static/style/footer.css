@@ -1,0 +1,41 @@
+/*inicio sección footer */
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  gap: 16px;
+  height: auto;
+  padding: 24px;
+}
+
+.footer-text {
+  font-family: "Inter", sans-serif;
+  font-size: .875rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-page {
+  margin-left: 7px;
+}
+
+@media (min-width: 720px) {
+  .container-footer {
+    flex-direction: row;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+
+  .author-page {
+    font-size: 1rem;
+  }
+}
+
+/*final sección footer */
