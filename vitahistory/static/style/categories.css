@@ -1,0 +1,41 @@
+/*inicio sección categories */
+
+.categories-container-content {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.create-category-btn {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .categories-container-content {
+    width: 550px;
+  }
+
+  form.create-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    margin-top: 24px;
+  }
+
+  input#category.text-form.category-field {
+    margin: 0;
+    width: auto;
+  }
+
+  button.global-btn.account-button.btn-category {
+    margin: 0;
+    width: auto;
+    padding: 0 24px;
+  }
+}
+
+/*final sección categories */
