@@ -1,0 +1,35 @@
+/* Clases utilitarias globales */
+
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.round-picture {
+  border-radius: 50%;
+}
+
+.person-name {
+  font-size: 1.1rem;
+}
+
+.max-width {
+  min-width: 100%;
+  max-width: 1370px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 720px) {
+  .person-name {
+    font-size: 1.5rem;
+  }
+}

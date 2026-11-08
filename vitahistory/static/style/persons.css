@@ -1,0 +1,213 @@
+/*inicio sección de vista de personas*/
+
+.persons-container {
+  background-color: #EBEBEB;
+  height: 100vh;
+  padding: 20px 24px;
+  width: 100%;
+}
+
+.persons-container-content {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-person-btn-two {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .create-person-btn-one {
+    display: none;
+  }
+
+  .persons-container-content {
+    max-width: 550px;
+  }
+
+  .create-person-btn-two {
+    display: block;
+    width: auto;
+  }
+
+  .create-person-btn-two a {
+    font-size: 1rem;
+  }
+
+  .persons-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .pagination-container {
+    justify-content: start;
+    width: 100%;
+    max-width: 550px;
+  }
+}
+
+/*final sección de vista de personas*/
+
+/*inicio sección de crear persona*/
+
+.create-person-container {
+  background-color: #EBEBEB;
+  height: 100vh;
+  padding: 24px;
+}
+
+form.form-create-person .primary-title {
+  font-size: 2rem;
+}
+
+form.form-create-person {
+  border: 1px solid #C9C9C9;
+  background-color: #E5E5E5;
+  padding: 16px 20px;
+  border-radius: 7px;
+  margin-top: 16px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+div.left-field.prefix {
+  width: 96px;
+}
+
+div.right-field.sufix {
+  width: 236px;
+  margin-left: 20px;
+}
+
+.category-btn a {
+  font-size: .875rem;
+}
+
+.login-button {
+  font-size: 1.25rem;
+}
+
+form.form-create-person label {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+form.form-create-person input, form.form-create-person select {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.category-field {
+  background-color: white;
+}
+
+.header-section-create {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .back-person-btn-one {
+    display: none;
+  }
+
+  div.create-person-container {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .header-section-create {
+    display: flex;
+  }
+
+  form.form-create-person {
+    width: 420px;
+  }
+
+  form.create-category {
+    width: 420px;
+  }
+}
+
+/*final sección de crear persona*/
+
+/*inicio sección de eliminar de personas*/
+
+.btn-container {
+  width: 100%;
+}
+
+.header-delete-section {
+  display: none;
+}
+
+form.delete-person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 7px;
+  padding: 20px 10px;
+  margin-top: 16px;
+}
+
+form.delete-person h3 {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.edit-person {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  form.delete-person {
+    width: 100%;
+    max-width: 550px;
+  }
+
+  .header-delete-section {
+    display: flex;
+  }
+
+  form.delete-person {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 24px;
+  }
+
+  form.delete-person h3 {
+    font-size: 2rem;
+  }
+
+  .cancel-btn {
+    width: 100%;
+  }
+
+  div.header-section.edit-person {
+    display: flex;
+  }
+
+  .btn-container {
+    width: 200px;
+  }
+}
+
+/*final sección de eliminar de personas*/

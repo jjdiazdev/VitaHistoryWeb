@@ -1,0 +1,53 @@
+/* Cabecera de perfil — se repite en 9 vistas internas */
+
+.profile-section {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.account-user-picture {
+  margin-top: 0;
+  width: 110px;
+  height: 110px;
+}
+
+.user-info p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #1B1B1B;
+}
+
+.user-info h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1B1B1B;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  height: 100%;
+  gap: 8px;
+}
+
+@media (min-width: 720px) {
+  .profile-section {
+    margin: 0;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1370px;
+    padding: 0 70px;
+  }
+}

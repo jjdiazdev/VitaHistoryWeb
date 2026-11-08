@@ -1,0 +1,74 @@
+/*inicio sección de cuenta*/
+
+.account-container {
+  height: 100vh;
+  background-color: #EBEBEB;
+}
+
+.basic-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.account-picture {
+  width: 160px;
+  height: 160px;
+}
+
+.text-title {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.account-container {
+  padding: 0 24px;
+}
+
+.form-account {
+  margin-top: 16px;
+  border: 1px solid #C9C9C9;
+  border-radius: 7px;
+  padding: 16px 20px;
+  background-color: #E5E5E5;
+}
+
+form.form-account label {
+  margin-top: 0;
+}
+
+button.global-btn.account-button {
+  font-size: 1.125rem;
+  height: 34px;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+@media (min-width: 720px) {
+  .basic-info {
+    gap: 24px;
+  }
+
+  .account-picture {
+    width: 200px;
+    height: 200px;
+  }
+
+  .account-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .form-account {
+    width: 420px;
+  }
+}
+
+/*final sección de cuenta*/

@@ -1,0 +1,307 @@
+/*inicio de página start (home/landing)*/
+
+/* Background images — moved from base.html inline styles */
+.body-container {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url("../image/logo-hero-seis-fondo.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.container-hero-five {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url("../image/logo-hero-cinco.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Tipografía de la landing */
+.primary-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #1B1B1B;
+  text-align: center;
+}
+
+.secundary-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: 8px;
+  color: #1D884D;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+}
+
+.secundary-title {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.tertiary-title {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.special-text {
+  text-decoration: underline;
+  color: #32CB1E;
+}
+
+/* Contenedor base */
+.container {
+  padding: 0 24px;
+  height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Hero 1 */
+.image-hero-one {
+  width: 384px;
+  height: 182px;
+}
+
+.container-hero-one {
+  background-color: #EBEBEB;
+}
+
+.hero-one {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-one-text p {
+  position: relative;
+  bottom: 20px;
+}
+
+/* Hero 2 */
+.container.container-hero-two {
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+img.image-hero-two {
+  position: absolute;
+  right: -100vw;
+  width: 20px;
+  height: 20px;
+}
+
+.hero-two {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 190px 0;
+}
+
+/* Hero 3 */
+.image-hero-three {
+  width: 344px;
+  height: 186px;
+  border-radius: 20px;
+}
+
+.container-hero-three {
+  background-color: #00394A;
+  color: white;
+  height: 100vh;
+}
+
+.hero-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 90px 0;
+  height: 100vh;
+}
+
+.hero-three h2 {
+  font-size: 2rem;
+}
+
+/* Hero 4 */
+.image-hero-four {
+  position: absolute;
+  right: -100vw;
+  width: 20px;
+  height: 20px;
+}
+
+.hero-four {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 100px 0;
+}
+
+.info-app-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+
+  border-top: 10px solid #32CB1E;
+  border-left: 10px solid #32CB1E;
+  border-radius: 10px;
+}
+
+/* Hero 5 */
+.hero-five {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 120px 0;
+}
+
+@media (min-width: 720px) {
+  .primary-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    color: #1B1B1B;
+    text-align: center;
+  }
+
+  .secundary-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    letter-spacing: 50%;
+    color: #1D884D;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .secundary-title {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .tertiary-title {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 70px;
+  }
+
+  .hero-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .image-hero-one {
+    width: 584px;
+    height: 277px;
+  }
+
+  .hero-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 200px 0;
+    max-width: 491px;
+  }
+
+  img.image-hero-two {
+    position: static;
+    width: 597px;
+    height: 404px;
+    border-radius: 20px;
+  }
+
+  .container-hero-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .hero-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .image-hero-three {
+    width: 638px;
+    height: 348px;
+  }
+
+  h2.secundary-title {
+    max-width: 557px;
+  }
+
+  .container-hero-four {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .info-app-container {
+    max-width: 637px;
+  }
+
+  .image-hero-four {
+    position: static;
+    width: 288px;
+    height: 528px;
+    border-radius: 20px;
+  }
+
+  .hero-five {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 100px;
+  }
+
+  .hero-five h1.secundary-title {
+    max-width: 627px;
+  }
+}
+
+/*fin de página start (home/landing)*/

@@ -1,0 +1,97 @@
+/*inicio de sección de mostrar historias*/
+
+.histories-section-container {
+  background-color: #EBEBEB;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.create-history-btn {
+  margin-top: 16px;
+}
+
+.histories-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.generation {
+  color: black;
+}
+
+@media (min-width: 720px) {
+  .histories-container {
+    width: 640px;
+  }
+}
+
+/*final de sección de mostrar historias*/
+
+/*inicio sección de creación de historias*/
+
+form.form-create-history {
+  width: 100%;
+  background-color: #E5E5E5;
+  border: 1px solid #C9C9C9;
+  border-radius: 7px;
+  padding: 16px 20px;
+}
+
+@media (min-width: 720px) {
+  form.form-create-history {
+    width: 420px;
+  }
+}
+
+/*final sección de creación de historias*/
+
+/*inicio sección eliminar historia*/
+
+.form-delete-history {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.delete-history-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.delete-history-person,
+.display-flex.delete-history-person {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  div.delete-history-container {
+    align-items: start;
+  }
+
+  form.delete-person.form-delete-history {
+    max-width: 640px;
+  }
+
+  .delete-history-person,
+  .display-flex.delete-history-person {
+    display: flex;
+  }
+}
+
+/*final sección eliminar historia*/

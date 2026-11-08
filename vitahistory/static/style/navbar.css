@@ -1,0 +1,174 @@
+/*inicio de menu version mobile*/
+
+header {
+  height: 120px;
+  background-color: #EBEBEB;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  flex-wrap: wrap;
+
+  max-width: 1370px;
+  margin: 0 auto;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 24px;
+}
+
+#nav-button {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  right: -100vw;
+
+  background-color: #EBEBEB;
+
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.nav-element {
+  border-top: solid 1px #1D884D;
+  width: 100%;
+}
+
+.last-element {
+  border-bottom: solid 1px #1D884D;
+}
+
+#nav-button li a {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 2rem;
+  color: #1D884D;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+#nav-button li a:active {
+  background-color: #1D884D;
+  color: white;
+}
+
+#check {
+  display: none;
+}
+
+label #menu-icon, label #cancel-icon {
+  border-radius: 10px;
+  font-size: 3.75rem;
+}
+
+label #cancel-icon {
+  display: none;
+  color: white;
+  background-color: black;
+  padding: 5px 15px;
+  z-index: 111;
+  position: relative;
+}
+
+#check:checked ~ label #menu-icon {
+  display: none;
+}
+
+#check:checked ~ label #cancel-icon {
+  display: inline-block;
+}
+
+#check:checked ~ ul#nav-button {
+  right: 0;
+}
+
+/*fin de menu version mobile*/
+
+@media (min-width: 720px) {
+  label.checker {
+    display: none;
+  }
+
+  .logo-navbar {
+    width: 209px;
+    height: 63px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBEBEB;
+  }
+
+  header {
+    height: 97px;
+    width: 100%;
+  }
+
+  .menu-container {
+    max-width: 1370px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  #nav-button {
+    position: static;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  #nav-button li a {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1D884D;
+
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+  }
+
+  .nav-element {
+    width: auto;
+    border: none;
+    border-right: solid 1px #1D884D;
+  }
+
+  .last-element {
+    border-right: none;
+  }
+
+  #nav-button li a:hover {
+    text-decoration: underline;
+  }
+}
