@@ -11,14 +11,15 @@
    Los @import deben ir siempre al principio, antes de cualquier regla.
    ===================================================================== */
 @import url("navbar.css");
-@import url("footer.css");
 @import url("buttons.css");
 @import url("forms.css");
 @import url("profile_header.css");
 @import url("cards.css");
 @import url("flashes.css");
+@import url("utilities.css");
 
 @import url("home.css");
+@import url("footer.css");
 @import url("auth.css");
 @import url("dashboard.css");
 @import url("account.css");
@@ -26,8 +27,6 @@
 @import url("categories.css");
 @import url("histories.css");
 @import url("errors.css");
-
-@import url("utilities.css");
 
 /* =====================================================================
    2. RESET GLOBAL
@@ -149,11 +148,6 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  height: 120px;
-  background-color: var(--color-bg);
-}
-
 a {
   text-decoration: none;
 }
@@ -165,9 +159,4 @@ ul {
 img {
   max-width: 100%;
   height: auto;
-}
-
-button {
-  font: inherit;
-  cursor: pointer;
 }

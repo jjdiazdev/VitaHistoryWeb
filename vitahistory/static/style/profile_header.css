@@ -37,17 +37,17 @@
   gap: 8px;
 }
 
-.header-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1370px;
-  padding: 0 70px;
-}
-
 @media (min-width: 720px) {
   .profile-section {
     margin: 0;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1370px;
+    padding: 0 70px;
   }
 }

@@ -1,5 +1,10 @@
 /*inicio de menu version mobile*/
 
+header {
+  height: 120px;
+  background-color: #EBEBEB;
+}
+
 .navbar {
   display: flex;
   align-items: center;

@@ -74,7 +74,8 @@ form.form-create-history {
   flex-direction: column;
 }
 
-.delete-history-person {
+.delete-history-person,
+.display-flex.delete-history-person {
   display: none;
 }
 
@@ -87,7 +88,8 @@ form.form-create-history {
     max-width: 640px;
   }
 
-  .delete-history-person {
+  .delete-history-person,
+  .display-flex.delete-history-person {
     display: flex;
   }
 }

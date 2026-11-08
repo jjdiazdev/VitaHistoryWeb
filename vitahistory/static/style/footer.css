@@ -1,6 +1,7 @@
 /*inicio sección footer */
 
-.container-footer {
+.container-footer,
+.container.container-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,15 +26,19 @@
 }
 
 @media (min-width: 720px) {
-  .container-footer {
+  .container-footer,
+  .container.container-footer {
     flex-direction: row;
+    height: auto;
+    padding: 24px;
   }
 
   .footer-text {
     font-size: 1rem;
   }
 
-  .author-page {
+  .author-page,
+  a.author-page {
     font-size: 1rem;
   }
 }
